@@ -1,7 +1,17 @@
 # vite-react
 
-`Vite`, `React`, `TypeScript`, `ESLint`, `Prettier`
+## Libraries
 
-### To Do
+`React`, `TypeScript`
 
-TailwindCSS, MSW, SWR, Axios, Jest, React Testing Library, GitHub Actions
+`TailwindCSS`
+
+`MSW`, `SWR`, `Axios`
+
+`Jest`, `React Testing Library`, `Storybook`
+
+`Vite`
+
+`ESLint`, `Prettier`
+
+`React Router`
