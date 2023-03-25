@@ -1,9 +1,7 @@
-import '~/App.css'
-
 import { useFetchUser, useFetchUsers } from '~/state/user/apis'
 import { User } from '~/state/user/models'
 
-function App() {
+const OverView: React.FC = () => {
   const { users, isLoading: isUsersLoading, isError: isUsersError } = useFetchUsers()
   const { user, isLoading, isError } = useFetchUser('3')
 
@@ -17,8 +15,9 @@ function App() {
         <div key={item.id}>{item.name}</div>
       ))}
       <div>{`get user of id=3 → id:${user?.id}, name:${user?.name}`}</div>
+      <div>OverView</div>
     </div>
   )
 }
 
-export default App
+export default OverView
