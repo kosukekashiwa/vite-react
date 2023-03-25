@@ -10,17 +10,10 @@
     "JSX": "readonly"
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "jsx-a11y",
-    "import",
-    "sort-keys-fix",
-    "react-hooks",
-    "@typescript-eslint",
-    "prettier"
-  ],
+  "plugins": ["jsx-a11y", "import", "react-hooks", "@typescript-eslint", "prettier"],
   "root": true,
   "rules": {
-    // "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/consistent-type-imports": "off",
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/prefer-as-const": "warn",
     "import/default": "error",
@@ -43,7 +36,7 @@
       }
     ],
     "no-alert": "error",
-    "no-console": "error",
+    "no-console": "warn",
     "no-dupe-keys": "error",
     "no-unused-private-class-members": "error",
     "prettier/prettier": [
@@ -55,8 +48,7 @@
         }
       }
     ],
-    "react-hooks/rules-of-hooks": "error",
-    "sort-keys-fix/sort-keys-fix": "warn"
+    "react-hooks/rules-of-hooks": "error"
   },
   "settings": {
     "import/parsers": {

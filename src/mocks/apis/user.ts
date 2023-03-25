@@ -16,7 +16,7 @@ export const userHandlers = [
   rest.get<DefaultBodyType, PathParams, User>(`/api/v1/users/:userId`, (req, res, ctx) => {
     const { userId } = req.params
 
-    return res(ctx.status(200), ctx.json({ id: '0', name: `name-${userId}` }))
+    return res(ctx.status(200), ctx.json({ id: `${userId}`, name: `name-${userId}` }))
   }),
   rest.post<DefaultBodyType, PathParams, DefaultBodyType>(
     `/api/v1/users/:userId`,
