@@ -4,7 +4,7 @@
 
 `React`, `TypeScript`
 
-`TailwindCSS`
+`TailwindCSS`, `DaisyUI`
 
 `MSW`, `SWR`, `Axios`
 
