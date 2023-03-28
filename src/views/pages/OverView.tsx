@@ -2,11 +2,8 @@ import { useFetchUser, useFetchUsers } from '~/state/user/apis'
 import { User } from '~/state/user/models'
 
 const OverView: React.FC = () => {
-  const { users, isLoading: isUsersLoading, isError: isUsersError } = useFetchUsers()
-  const { user, isLoading, isError } = useFetchUser('3')
-
-  console.log('Users', isUsersLoading, isUsersError)
-  console.log('User', isLoading, isError)
+  const { users } = useFetchUsers()
+  const { user } = useFetchUser('3')
 
   return (
     <div>

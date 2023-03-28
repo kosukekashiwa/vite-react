@@ -4,14 +4,14 @@
 
 `React`, `TypeScript`
 
-`TailwindCSS`, `DaisyUI`
+`React Router`
 
 `MSW`, `SWR`, `Axios`
+
+`TailwindCSS`, `DaisyUI`, `Heroicons`
 
 `Jest`, `React Testing Library`, `Storybook`
 
 `Vite`
 
 `ESLint`, `Prettier`
-
-`React Router`
