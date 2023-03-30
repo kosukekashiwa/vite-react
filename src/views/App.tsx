@@ -48,22 +48,20 @@ function ToggleDarkMode() {
   useEffect(() => {
     if (isInitialDarkMode) {
       document.documentElement.classList.add('dark')
-      document.documentElement.dataset.theme = 'dark'
+      // If you use daisyUI themes.
+      // document.documentElement.dataset.theme = 'dark'
     } else {
       document.documentElement.classList.remove('dark')
-      document.documentElement.dataset.theme = 'light'
+      // If you use daisyUI themes.
+      // document.documentElement.dataset.theme = 'light'
     }
   }, [isInitialDarkMode])
 
   const handleDarkModeOn = () => {
-    document.documentElement.classList.add('dark')
-    document.documentElement.dataset.theme = 'dark'
     localStorage.setItem('darkMode', 'on')
     setIsDarkMode(true)
   }
   const handleDarkModeOff = () => {
-    document.documentElement.classList.remove('dark')
-    document.documentElement.dataset.theme = 'light'
     localStorage.setItem('darkMode', 'off')
     setIsDarkMode(false)
   }
@@ -71,11 +69,17 @@ function ToggleDarkMode() {
   return (
     <div>
       {isDarkMode ? (
-        <button onClick={handleDarkModeOff} className="btn btn-circle">
+        <button
+          onClick={handleDarkModeOff}
+          className="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+        >
           <SunIcon />
         </button>
       ) : (
-        <button onClick={handleDarkModeOn} className="btn btn-circle">
+        <button
+          onClick={handleDarkModeOn}
+          className="py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
+        >
           <MoonIcon />
         </button>
       )}
