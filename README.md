@@ -8,7 +8,7 @@
 
 `MSW`, `SWR`, `Axios`
 
-`TailwindCSS`, `DaisyUI`, `Heroicons`
+`TailwindCSS`, `Headless UI`, `Heroicons`
 
 `Jest`, `React Testing Library`, `Storybook`
 

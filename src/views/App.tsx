@@ -3,7 +3,6 @@ import { MoonIcon } from '@heroicons/react/24/solid'
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Navigate, Outlet, Route, Routes } from 'react-router-dom'
 
-import DaisyUi from '~/views/pages/DaisyUi'
 import OverView from '~/views/pages/OverView'
 
 function App() {
@@ -21,7 +20,7 @@ function AppRouter() {
         <Route path={'/'} element={<Navigate to={'ui'} />} />
         <Route path="ui" element={<AppLayout />}>
           <Route index element={<OverView />} />
-          <Route path={'daisy-ui'} element={<DaisyUi />} />
+          <Route path={'hoge'} element={<div>hoge</div>} />
         </Route>
         <Route path="*" element={<div>Not Found</div>} />
       </Routes>
