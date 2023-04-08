@@ -10,7 +10,7 @@
 
 `TailwindCSS`, `Headless UI`, `Heroicons`
 
-`Jest`, `React Testing Library`, `Storybook`
+`Jest`, `React Testing Library`, ~~`Storybook`~~
 
 `Vite`
 
